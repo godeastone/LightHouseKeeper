@@ -4,26 +4,53 @@ using UnityEngine;
 
 public class DogamManager : MonoBehaviour
 {
-    public Boat boat;
     private int level;
+    public Boat[] BoatList;
+
     public static DogamManager dogam_instance;
 
-    public Boat[] BoatList;
-    
+    public Animator DogamOpenButton;
+    public Animator Boat1;
+    public Animator Boat2;
+    public Animator Boat3;
+    public Animator Boat4;
+    public Animator Boat5;
+
 
     private void Start()
     {
+        dogam_instance = this;
     }
 
-    public void BoatClick()
+    public void DogamOpen()
     {
-        level = boat.level;
-        if(BoatList[level-1].is_detected == false)
+        DogamOpenButton.SetBool("Appear", false);
+
+        if(BoatList[0].is_detected == true)
         {
-            BoatList[level-1].is_detected = true;
+            Boat1.SetBool("Appear", true);
         }
-        
+        if (BoatList[1].is_detected == true)
+        {
+            Boat2.SetBool("Appear", true);
+        }
+        if (BoatList[2].is_detected == true)
+        {
+            Boat3.SetBool("Appear", true);
+        }
+        if (BoatList[3].is_detected == true)
+        {
+            Boat4.SetBool("Appear", true);
+        }
+        if (BoatList[4].is_detected == true)
+        {
+            Boat5.SetBool("Appear", true);
+        }
     }
+
+
+
+    
 
 
 }

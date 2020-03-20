@@ -71,6 +71,12 @@ public class GameManager : MonoBehaviour
     {
         dogam_page.SetBool("Appear", false);
         Map.control_button.SetBool("Appear", true);
+        DogamManager.dogam_instance.DogamOpenButton.SetBool("Appear", true);
+        DogamManager.dogam_instance.Boat1.SetBool("Appear", false);
+        DogamManager.dogam_instance.Boat2.SetBool("Appear", false);
+        DogamManager.dogam_instance.Boat3.SetBool("Appear", false);
+        DogamManager.dogam_instance.Boat4.SetBool("Appear", false);
+        DogamManager.dogam_instance.Boat5.SetBool("Appear", false);
     }
 
     public void DeptBtnClick()

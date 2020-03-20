@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7656077064842179521}
   - component: {fileID: 3493635975498184879}
   - component: {fileID: -7113064916612571752}
-  - component: {fileID: 608558358575715902}
   - component: {fileID: 286095315120158097}
   m_Layer: 5
   m_Name: boat4
@@ -90,10 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f11c99cb82ddba4e941f617edc59a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoatName: 
+  BoatName: boat4
   level: 4
   is_detected: 0
-  side: 0
 --- !u!50 &3493635975498184879
 Rigidbody2D:
   serializedVersion: 4
@@ -141,25 +139,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0
---- !u!114 &608558358575715902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7630446159760246766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b80eeedd430084bb63142e8a497cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boat: {fileID: 7656077064842179521}
-  BoatList:
-  - {fileID: 2764915031125715156, guid: faefbecc3838a3846b2c59e32e820329, type: 3}
-  - {fileID: 3369651156270275677, guid: 769f369232aeba449a507a4ab8cc3a1c, type: 3}
-  - {fileID: 8996006681155684037, guid: 4076bf403317bed48b3e2984d2dc1534, type: 3}
-  - {fileID: 7656077064842179521}
-  - {fileID: 1794959815536139190, guid: 09256e44a55b88e488f176fb8bafd653, type: 3}
 --- !u!114 &286095315120158097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +182,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 608558358575715902}
+      - m_Target: {fileID: 7656077064842179521}
         m_MethodName: BoatClick
         m_Mode: 1
         m_Arguments:

@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Orininal Code
+ * https://forum.unity.com/threads/force-camera-aspect-ratio-16-9-in-viewport.385541/#post-2509982
+ * User name quarag
+ */
+
 public class CameraManager : MonoBehaviour
 {
     static public CameraManager instance;

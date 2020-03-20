@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (curTime >= spawnTime && boatCount < MaxCount)
         {
-            BoatLevel = Random.Range(0, 4);
+            BoatLevel = Random.Range(0, 5);
             //보트의 생성종류 컨트롤
             num = Random.Range(0, 4);
             //보트의 스폰위치 컨트롤
