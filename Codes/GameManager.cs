@@ -17,11 +17,17 @@ public class GameManager : MonoBehaviour
     public Animator facility_page;
     public Animator salary_button;
     public Animator salary_text;
+    public Animator splash1;
+    public Animator mainimg;
+    public Animator mainimg2;
     public Text text_sal;
     
     void Start()
     {
-        
+        mainimg.SetBool("Appear", true);
+        mainimg2.SetBool("Appear", true);
+        splash1.SetBool("Appear1", false);
+        splash1.SetBool("Appear2", false);
     }
 
 
@@ -59,6 +65,12 @@ public class GameManager : MonoBehaviour
     public void BtnClick()
     {
         Data.Ispause = false;
+    }
+
+    public void titleBtnClick()
+    {
+        mainimg.SetBool("Appear", false);
+        mainimg2.SetBool("Appear", false);
     }
 
     public void DogamBtnClick()
